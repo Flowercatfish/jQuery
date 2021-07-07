@@ -1,0 +1,267 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a{
+    text-decoration:none;
+}
+.box{
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.top{
+	background: #f6f6f6;
+}
+.top ul{
+	display: flex;
+	justify-content: flex-end;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 8px;
+}
+.fb{
+	color: #4460a0;
+	opacity: 1;
+}
+.fb:hover{
+	opacity: 0.5;
+}
+.twt{
+	color: #62c8f0;
+	opacity: 1;
+}
+.twt:hover{
+	opacity: 0.5;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu{
+	display: flex;
+	float: right;
+}
+.menu li{
+	max-width: 100px;
+	text-align: center;
+	position:relative;
+  z-index: 10;
+}
+.menu li a{
+	font-size: 16px;
+	color: #22d3a7;
+	font-weight: bold;
+	padding: 10px;
+}
+.menu li a:hover{
+	border-bottom: 2px solid #22d3a7;
+}
+.menu a{
+  text-decoration: none;
+  background: #fff;
+  display: block;
+  text-align: center;
+}
+.menu ul{
+  display: none;
+}
+.dropdown-open{
+	position: absolute;
+	z-index: 90;
+}
+.dropdown-open a:hover{
+	color: #fff;
+  background-color: #00cc99;
+}
+
+.swiper-container {
+  width: 1025px;
+  height: 350px;
+}
+
+.course{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+.course img{
+	height: 100px;
+	margin: 40px 0px 10px 0px;
+}
+.course-item{
+	box-shadow: 3px 3px 9px #cccccc;
+	border: 1px solid #eee;
+	text-align: center;
+	width: 300px;
+	padding-bottom: 10px;
+	line-height: 20px;
+}
+.course-item h3{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+}
+.course-item p{
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin: 10px 20px 20px 20px;
+}
+.course-item ul{
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: left;
+	margin: 5px 20px 0px 10px;
+	padding-left: 10px;
+}
+.course-item li{
+	text-align: left;
+	list-style-type: disc;
+	margin-left: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 24px;
+}
+
+.difference{
+	display: flex;
+	flex-direction: column;
+}
+.difference h4{
+	margin: 55px 0px 30px 0px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+}
+.difference th,.difference td{
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+.difference th{
+	padding: 10px;
+	background: #f7f7f7;
+	font-weight: bold;
+}
+.difference td{
+	padding: 10px;
+}
+.green{
+    color: #22b28e;
+	font-weight: bold;
+}
+
+.inputarea{
+	background:linear-gradient(#00654b, #009872);
+	margin: 60px 0px 20px 0px;
+}
+.inputarea h5{
+	padding: 40px;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	line-height: 34px;
+}
+.inputarea .box{
+	display: flex;
+	justify-content: space-around;
+}
+.inputarea .box textarea{
+	border-radius: 6px;
+	width: 462px;
+	margin-bottom: 30px;
+}
+.inputarea .data{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	width: 462px;
+}
+.inputarea .data label{
+	margin-bottom: 10px;
+}
+.inputarea .data input{
+	margin-bottom: 10px;
+	border-radius: 5px;
+	height: 24px;
+}
+.inputarea .enter{
+	background-color: #00CC99;
+    color: white;
+	width: 72px;
+	height: 36px;
+	align-self: flex-end;
+}
+.inputarea .enter:hover{
+	opacity: 0.8;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+.footer a{
+	color:#e12d80;
+}
+.footer a:hover{
+	opacity: 0.5;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
